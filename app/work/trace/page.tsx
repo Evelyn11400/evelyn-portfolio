@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import TracePlanSelector from "./TracePlanSelector";
-import { LanguageToggle } from "../../components/LanguageProvider";
 import "./trace.css";
 
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ function TraceMock({ view }: { view: "compare" | "review" | "decision" }) {
 
 export default function TraceCaseStudy() {
   return <main className="trace-case">
-    <header className="site-nav shell"><Link className="wordmark" href="/" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="/#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a><LanguageToggle/></nav></header>
+    <header className="site-nav shell"><Link className="wordmark" href="/" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="/#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a></nav></header>
     <section className="case-hero shell"><Link className="back-link" href="/#work">← Back to work</Link><p className="case-kicker">TRACE · AI RELEASE REVIEW PLATFORM</p><h1>Ship AI with<br/><em>eyes open.</em></h1><div className="case-meta"><div><span>ROLE</span><b>UI/UX Designer</b></div><div><span>PRODUCT</span><b>B2B SaaS</b></div><div><span>USERS</span><b>AI Product Teams</b></div><div><span>YEAR</span><b>2026</b></div></div></section>
     <section className="trace-case-banner" aria-label="Trace release review interface"><div className="trace-window"><div className="trace-window-top"><span className="trace-logo">◈ &nbsp; trace</span><span>ORBIT AI / RELEASES</span><span>● &nbsp; REVIEW OPEN</span></div><div className="trace-window-body"><div className="trace-window-main"><small>DEMO DATA · RELEASE REVIEW</small><h2>Assistant v2.4 <span>→</span> v2.5</h2><p>A single place to review what improved and what needs attention before launch.</p><div className="trace-metrics"><div><small>ANSWER QUALITY</small><strong>Improved ↗</strong></div><div><small>LATENCY</small><strong>Stable →</strong></div><div><small>COST PER RESPONSE</small><strong>Higher ↗</strong></div></div><div className="trace-example"><span>FLAGGED EXAMPLE</span><strong>Answer missed a policy exception</strong><p>Review the source, compare both answers, and assign a decision owner.</p></div></div><aside><small>RELEASE CHECKLIST</small><p>✓ Evaluation run complete</p><p>✓ Product review complete</p><p>○ Cost review pending</p><p>○ Final approval pending</p><b>Hold for review</b></aside></div></div></section>
     <section className="case-block shell"><p className="eyebrow">THE OPPORTUNITY</p><div><h2>A better answer in one test can hide a worse experience elsewhere.</h2><p>AI companies compare models across answer quality, speed, and cost. Results often live in separate reports, while examples that need human judgment get passed around in threads. Trace brings the release decision into a shared workspace where evidence and ownership stay together.</p><p className="trace-disclosure">Independent product study. The interface uses illustrative demo data; no customer research or production results are claimed.</p></div></section>

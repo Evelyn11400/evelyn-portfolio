@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { LanguageToggle } from "../../components/LanguageProvider";
 
 export const metadata: Metadata = {
   title: "Shiftline — Evelyn Li",
@@ -39,7 +38,7 @@ const screens = [
 
 export default function ShiftlineCaseStudy() {
   return <main className="shiftline-case shiftline-product-case">
-    <header className="site-nav shell"><Link className="wordmark" href="/" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="/#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a><LanguageToggle/></nav></header>
+    <header className="site-nav shell"><Link className="wordmark" href="/" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="/#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a></nav></header>
 
     <section className="case-hero shell shiftline-hero">
       <Link className="back-link" href="/#work">← Back to work</Link>
