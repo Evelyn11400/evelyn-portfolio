@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LanguageToggle } from "./components/LanguageProvider";
 
 const capabilities = [
   "UI/UX Design", "B2B SaaS", "Product Strategy", "Growth Design",
@@ -58,7 +59,7 @@ function TempoPreview() {
 
 export default function Home() {
   return <main>
-    <header className="site-nav shell"><Link className="wordmark" href="#top" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a></nav></header>
+    <header className="site-nav shell"><Link className="wordmark" href="#top" aria-label="Evelyn Li home">EL<span>.</span></Link><nav aria-label="Main navigation"><Link href="#work">Work</Link><Link href="/about">About</Link><a href="mailto:hello@evelynli.work">Contact</a><LanguageToggle/></nav></header>
     <section className="hero shell home-hero-motion" id="top">
       <div className="availability home-reveal home-reveal-1"><span/> AVAILABLE FOR UI/UX DESIGN ROLES</div>
       <h1 className="home-hero-title"><span className="hero-line home-reveal home-reveal-2">UI/UX designer</span><span className="hero-line home-reveal home-reveal-3">for <em>work <br className="mobile-break"/>and life.</em></span></h1>
